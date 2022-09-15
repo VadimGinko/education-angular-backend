@@ -1,0 +1,63 @@
+#localhost:8080/swagger-ui.html
+# db
+sharding:
+  jdbc:
+    config:
+      props:
+        sql:
+          show=true
+
+spring:
+  mvc:
+    async:
+      request-timeout: 5s
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stage
+    username: postgres
+    password: admin
+    #password: admin
+  jpa:
+    hibernate:
+      #      ddl-auto: updateSubscription
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ghinko2001@gmail.com
+    password: mdtzigrnlqojenba
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+# jwt
+jwt:
+  token:
+    secret: jwtprojectpass
+    expired: 3600000
+
+dropbox:
+  access:
+    token: sl.BFCNzbsHGSeD0cBKplvCa6EkhD2LiP_FWgutzCzKWI6G--pO-SziGLZfd1QxSR5BpMYR0qxIRk_1K56d0t6eJ4_639zU7Z0rVtHIaQPSNP15KE4p4Vpjl-3WhnLmNPR8kRwC36s
+  refresh:
+    token: 6tnbg-R8OCwAAAAAAAAAAeA3G0qUX_MfwV4TIrKEHZCxu3kEygidPSBrZeWOyqte
+  app:
+    key: 8qtrk7fd3cbyz66
+    secret: 9rfvhh2czlkfkq5
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+server:
+  port: 8070
