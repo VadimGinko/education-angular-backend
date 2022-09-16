@@ -27,7 +27,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: ghinko2001@gmail.com
-    password: mdtzigrnlqojenba
+    password:  
 
     properties:
       mail:
@@ -49,12 +49,12 @@ jwt:
 
 dropbox:
   access:
-    token: sl.BFCNzbsHGSeD0cBKplvCa6EkhD2LiP_FWgutzCzKWI6G--pO-SziGLZfd1QxSR5BpMYR0qxIRk_1K56d0t6eJ4_639zU7Z0rVtHIaQPSNP15KE4p4Vpjl-3WhnLmNPR8kRwC36s
+    token:  
   refresh:
-    token: 6tnbg-R8OCwAAAAAAAAAAeA3G0qUX_MfwV4TIrKEHZCxu3kEygidPSBrZeWOyqte
+    token: 
   app:
-    key: 8qtrk7fd3cbyz66
-    secret: 9rfvhh2czlkfkq5
+    key: 
+    secret: 
 
 springdoc:
   api-docs:
